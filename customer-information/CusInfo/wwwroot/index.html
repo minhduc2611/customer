@@ -1,0 +1,144 @@
+<html ng-app="myApp">
+   <head>
+      <title>Angular</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script>
+      <script src="main.js"></script>
+      <style>
+         table {
+         width:100%;
+         }
+         table, th, td {
+         border: 1px solid black;
+         border-collapse: collapse;
+         }
+         th, td {
+         padding: 15px;
+         text-align: left;
+         }
+		 table#t01 td:hover{
+			background-color:rgb(153, 151, 151);
+         }
+         table#t01 tr:nth-child(even) {
+         background-color: #eee;
+         }
+         table#t01 tr:nth-child(odd) {
+         background-color: #fff;
+         }
+         table#t01 th {
+         background-color: black;
+         color: white;
+         }
+      </style>
+   </head>
+   <body ng-controller="myCtrl">
+      <div >
+         <table id="t01">
+            <tr>
+               <th>Name</th>
+               <th>gender</th>
+               <th>Email</th>
+               <th>Action</th>
+            </tr>
+            <tr  ng-repeat="staff in staffs">
+               <td ng-click="editing =true" ng-hide="editing">{{staff.name}}</td>
+					<td ng-show="editing">
+						<form ng-submit="editing = false">
+							<input  ng-model="staff.name" type="text" required>
+							<button class="btn" type="submit">Save</button>
+						</form>
+					</td>
+               <td ng-click="editing2 = true" ng-hide="editing2">{{staff.gender}}</td>
+					<td ng-show="editing2">
+						<form ng-submit="editing2 = false">
+							male: <input type="radio" ng-model="staff.gender" value="male" ><br/>
+							female: <input ng-model="staff.gender" type="radio" value="female"  >
+							<button class="btn" type="submit">Save</button>
+						</form>
+					</td>
+               <td ng-click="editing3 =true; three.input.focus()" ng-hide="editing3">{{staff.email}}</td>
+					<td ng-show="editing3">
+						<form ng-submit="editing3 = false">
+							<input ng-model="staff.email" type="email"  required>
+							<button class="btn" type="submit">Save</button>
+						</form>
+					</td>
+               <td><input type="button" onclick="return confirm('xoa?')" ng-click="staffDel(staff)" value="Delete"></td>
+            </tr>
+            <tr ng-show="add" >
+               <form name="staffadd" ng-submit="staffAdd() ; add = false  " >
+                  <td><input ng-model="sName"  type="text" required></td>
+                  <td>male: <input type="radio" ng-model="sGender" value="male" ><br/>female: <input ng-model="sGender" type="radio" value="female"  ></td>
+                  <td><input ng-model="sGmail" type="email"  required></td>
+                  <td><input class="btn" ng-disabled="staffadd.$invalid" type="submit" value="Add"></td>
+               </form>
+            </tr>
+            <tr>
+               <td><input type="button" ng-click="add = true" name="showAdd" value="Add staff"></td>
+            </tr>
+         </table>
+      </div>
+   </body>
+   <script type="text/javascript">
+   var app = angular.module("myApp", []);
+app.controller("myCtrl", function($scope,$http) {
+
+
+  $scope.count = 0;
+  // DATA
+  // $scope.staffs=[];
+
+
+
+  $http.get('https://localhost:5001/api/cus')
+            .then(function(data, status) {
+                $scope.staffs = data.data;
+       console.log(data);
+            });
+
+
+  // ADD
+  $scope.staffAdd = function(){
+    $scope.staffs.push({
+      "_id": '',
+      "index": 0,
+      "guid": '',
+      "isActive": true,
+      "balance": '',
+      "picture": '',
+      "age": '',
+      "eyeColor": '',
+      "name": $scope.sName,
+      "gender": $scope.sGender,
+      "company": '',
+      "email": $scope.sGmail,
+      "phone": '',
+      "address": '',
+      "about": '',
+      "registered": '',
+      "latitude": '',
+      "longitude": '',
+      "tags": [
+      ],
+      "friends": [
+      ],
+      "greeting": '',
+      "favoriteFruit": ''
+    })
+
+    $scope.sName = "";
+    $scope.sGender = "";
+    $scope.sGmail = "";
+
+  }
+  // DEL
+  $scope.staffDel = function(item){
+    //tim vi tri item
+    vitri = $scope.staffs.indexOf(item);
+    // xoa time = vitri splice
+    $scope.staffs.splice(vitri,1);
+  }
+
+
+});
+   </script>
+</html>

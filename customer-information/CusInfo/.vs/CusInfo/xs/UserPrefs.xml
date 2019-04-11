@@ -1,0 +1,17 @@
+﻿<Properties StartupConfiguration="{3E506941-AEE0-434E-BB5E-1139716B4F37}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="wwwroot/index.html">
+    <Files>
+      <File FileName="Controllers/CustomerController.cs" Line="23" Column="20" />
+      <File FileName="wwwroot/generated.json" Line="14" Column="30" />
+      <File FileName="wwwroot/index.html" Line="19" Column="40" />
+      <File FileName="Startup.cs" Line="40" Column="10" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.CusInfo PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+</Properties>

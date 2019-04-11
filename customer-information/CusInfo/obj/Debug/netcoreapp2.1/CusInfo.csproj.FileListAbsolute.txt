@@ -1,0 +1,14 @@
+/Users/minhduc/Projects/CusInfo/CusInfo/bin/Debug/netcoreapp2.1/CusInfo.deps.json
+/Users/minhduc/Projects/CusInfo/CusInfo/bin/Debug/netcoreapp2.1/CusInfo.runtimeconfig.json
+/Users/minhduc/Projects/CusInfo/CusInfo/bin/Debug/netcoreapp2.1/CusInfo.runtimeconfig.dev.json
+/Users/minhduc/Projects/CusInfo/CusInfo/bin/Debug/netcoreapp2.1/CusInfo.dll
+/Users/minhduc/Projects/CusInfo/CusInfo/bin/Debug/netcoreapp2.1/CusInfo.pdb
+/Users/minhduc/Projects/CusInfo/CusInfo/obj/Debug/netcoreapp2.1/CusInfo.csprojAssemblyReference.cache
+/Users/minhduc/Projects/CusInfo/CusInfo/obj/Debug/netcoreapp2.1/CusInfo.csproj.CoreCompileInputs.cache
+/Users/minhduc/Projects/CusInfo/CusInfo/obj/Debug/netcoreapp2.1/CusInfo.RazorAssemblyInfo.cache
+/Users/minhduc/Projects/CusInfo/CusInfo/obj/Debug/netcoreapp2.1/CusInfo.RazorAssemblyInfo.cs
+/Users/minhduc/Projects/CusInfo/CusInfo/obj/Debug/netcoreapp2.1/CusInfo.AssemblyInfoInputs.cache
+/Users/minhduc/Projects/CusInfo/CusInfo/obj/Debug/netcoreapp2.1/CusInfo.AssemblyInfo.cs
+/Users/minhduc/Projects/CusInfo/CusInfo/obj/Debug/netcoreapp2.1/CusInfo.RazorTargetAssemblyInfo.cache
+/Users/minhduc/Projects/CusInfo/CusInfo/obj/Debug/netcoreapp2.1/CusInfo.dll
+/Users/minhduc/Projects/CusInfo/CusInfo/obj/Debug/netcoreapp2.1/CusInfo.pdb

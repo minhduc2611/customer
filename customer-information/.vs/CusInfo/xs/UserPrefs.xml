@@ -1,0 +1,21 @@
+﻿<Properties StartupConfiguration="{982DCC9F-6BD5-4AC8-969B-802DD6BAE697}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="CusInfo/Startup.cs">
+    <Files>
+      <File FileName="CusInfo/wwwroot/main.js" Line="364" Column="5" />
+      <File FileName="CusInfo/wwwroot/index.html" Line="97" Column="8" />
+      <File FileName="CusInfo/Startup.cs" Line="34" Column="53" />
+      <File FileName="CusInfo/Program.cs" Line="20" Column="38" />
+      <File FileName="CusInfo/Models/CustomerContext.cs" Line="7" Column="32" />
+      <File FileName="CusInfo/Controllers/CustomerController.cs" Line="8" Column="2" />
+      <File FileName="CusInfo/Models/CustomersInfo.cs" Line="14" Column="1" />
+      <File FileName="CusInfo/Controllers/ValuesController.cs" Line="14" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.CusInfo PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+</Properties>
